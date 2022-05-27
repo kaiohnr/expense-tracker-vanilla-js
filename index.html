@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./images/favicon.jpg" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a706274c7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="title__container">
+      <h1>
+        Expense Tracker
+        <a href="https://github.com/kaiohnr" target="_blank"
+          ><i class="fa-brands fa-github github-icon"></i
+        ></a>
+      </h1>
+    </div>
+
+    <div class="balance__container">
+      <h2>Spendings</h2>
+      <p>$ <span id="balance">0</span></p>
+    </div>
+
+    <div class="new-item__container">
+      <h3>Register new item</h3>
+    </div>
+
+    <div class="item-details__container">
+      <div class="details__container">
+        <div class="item-name__container">
+          <label class="label-style" for="item-name">Insert item name</label>
+          <input
+            name="item-name"
+            type="text"
+            placeholder="Item name..."
+            id="item-name-input"
+            class="input-style"
+          />
+        </div>
+
+        <div class="item-date__container">
+          <label title="Date" for="item-date" class="label-style"
+            >Select item date</label
+          >
+          <input
+            type="date"
+            name="item-date"
+            id="item-date-input"
+            class="input-style"
+          />
+        </div>
+
+        <div class="item-type__container">
+          <label class="label-style" for="item-type">Select item type</label>
+          <select name="item-type" id="select-types" class="input-style">
+            <option value="Online Shooping">Online Shooping</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Household Items">Household Items</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Food">Food</option>
+          </select>
+        </div>
+
+        <div class="item-price__container">
+          <label class="label-style" for="item-price">Insert item price</label>
+          <input
+            name="item-price"
+            class="input-style"
+            type="number"
+            placeholder="Price"
+            id="item-price-input"
+          />
+        </div>
+      </div>
+
+      <div class="add-item__container">
+        <button class="add-item-btn">Add a new item</button>
+      </div>
+    </div>
+
+    <div class="items__container">
+      <div class="items">
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+</html>
